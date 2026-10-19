@@ -65,6 +65,18 @@ In our example, we would run the commit command as follows:
 
 Among the three methods described here, the precedence order is `command-line > repository > global`. This means that, if a variable is configured in the command-line as well as globally, the command-line value would be used for the operation.
 
+### Co-authoring Commits
+
+When pair programming or collaborating on changes, you can credit multiple authors on a single commit by adding a `Co-authored-by:` trailer to your commit message (separated by an empty line):
+
+```bash
+git commit -m "feat: implement feature updates
+
+Co-authored-by: Collaborator <collaborator@users.noreply.github.com>"
+```
+
+GitHub automatically recognizes this format and displays all co-authors on the commit.
+
 ## Beyond User Details
 
 We have dealt with only the user details till now while working with the config. However, there are several other configuration options available. Some of them are:
