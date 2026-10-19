@@ -37,9 +37,16 @@ git push origin main
 ```
 Notice here you're pushing to the remote named `origin`.
 
-If you want to fetch and merge the latest changes of my fork (`upstream` remote) to your local branch at same time then you can directly go for:
+If you want to fetch and merge the latest changes of the upstream repository to your local branch at the same time, you can directly run:
 ```
 git pull upstream main
 ```
 
-So by now or at this point, all your repositories are up-to-date. Well done! You should do this, every time your GitHub repo tells you that you are a few commits behind.
+### Syncing via GitHub Web Interface
+Alternatively, you can keep your fork updated directly on GitHub:
+1. Navigate to your fork on GitHub (`https://github.com/<your-username>/first-contributions`).
+2. Below the repository navigation, click **Sync fork**.
+3. Click **Update branch**.
+4. Then pull the updated changes to your local machine using `git pull origin main`.
+
+So by now, all your repositories are up-to-date. Well done! You should do this whenever your fork is behind upstream.
